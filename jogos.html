@@ -44,14 +44,29 @@
       cursor: pointer;
       border-radius: 10px;
     }
+    .game-list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 40px;
+    }
+    .game-item {
+      margin: 20px;
+      text-align: center;
+    }
+    .game-item img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
   </style>
 </head>
 <body>
   <header>
     <h1>Jogos - Games Studios</h1>
     <nav>
-      <!-- Link para voltar ao site principal -->
-      <a href="https://gamesstudiosrbx.github.io/">Início</a> <!-- Aqui -->
+      <a href="https://gamesstudiosrbx.github.io/">Início</a>
       <a href="#">Jogos</a>
       <a href="#">Sobre</a>
       <a href="#">Contato</a>
@@ -61,10 +76,21 @@
   <section>
     <h2>Veja Nossos Jogos!</h2>
     <p>Aqui estão alguns dos jogos que estamos criando. Fique ligado para mais atualizações!</p>
-    <br>
-    <button onclick="window.location.href='https://www.roblox.com/games/90489100399648/Dr0guinhaGamers-Place'">Jogue Dr0guinhaGamers</button>
-    <br><br>
-    <button onclick="window.location.href='https://www.roblox.com/games/1234567890/Outro-Jogo'">Jogue Outro Jogo</button>
+    <div class="game-list">
+      <!-- Jogo 1 -->
+      <div class="game-item">
+        <img src="https://www.roblox.com/asset/?id=1234567890" alt="Imagem do Jogo 1">
+        <br>
+        <button onclick="window.location.href='https://www.roblox.com/games/90489100399648/Dr0guinhaGamers-Place'">Jogue Dr0guinhaGamers</button>
+      </div>
+      <!-- Jogo 2 -->
+      <div class="game-item">
+        <img src="https://www.roblox.com/asset/?id=1234567890" alt="Imagem do Jogo 2">
+        <br>
+        <button onclick="window.location.href='https://www.roblox.com/games/1234567890/Outro-Jogo'">Jogue Outro Jogo</button>
+      </div>
+    </div>
   </section>
 </body>
 </html>
+
